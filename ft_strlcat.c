@@ -6,7 +6,7 @@
 /*   By: mapfenni <mapfenni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/27 18:50:08 by mapfenni          #+#    #+#             */
-/*   Updated: 2023/04/06 17:38:34 by mapfenni         ###   ########.fr       */
+/*   Updated: 2023/04/11 19:07:37 by mapfenni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	i = 0;
 	j = 0;
 	if (size == 0)
-		return (0);
+		return (ft_strlen(src));
 	while (dest[j] != '\0')
 		j++;
 	dest_size = j;
@@ -41,24 +41,13 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	return (src_size + dest_size);
 }
 
-// #include <stdio.h>
 // #include <string.h>
+// #include <stdio.h>
 // int main()
 // {
-// 	char dest[10] = "ba";
-// 	char src[10] = "nane";
-
-// 	printf("%s\n", dest);
-// 	printf("%s\n-----\n", src);
-
-// 	printf("%u\n", ft_strlcat(dest, src, 0));
-
-// 	// printf("%s\n", dest);
-// 	// printf("%s\n-----\n", src);
-
-// 	// printf("%lu\n", strlcat(dest, src, 10));
-
-// 	// printf("%s\n", dest);
-// 	// printf("%s\n", src);
-
+// 	char *src = (char *)"AAAAAAAAA";
+// 	char dest[30];
+// 	memset(dest, 0, 30);
+// 	dest[0] = 'B';
+// 	printf("%lu", strlcat(dest, "123", 0));
 // }

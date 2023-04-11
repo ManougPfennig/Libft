@@ -6,7 +6,7 @@
 #    By: mapfenni <mapfenni@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/27 18:32:43 by mapfenni          #+#    #+#              #
-#    Updated: 2023/04/04 19:33:03 by mapfenni         ###   ########.fr        #
+#    Updated: 2023/04/10 15:33:27 by mapfenni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,8 @@ ft_toupper.c ft_strmapi.c ft_striteri.c ft_substr.c ft_strjoin.c ft_strtrim.c
 
 SRCS_BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
 ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
+
+CFLAGS += -Wall -Wextra -Werror
 
 OBJS = ${SRCS:.c=.o}
 BONUS = ${SRCS_BONUS:.c=.o}
