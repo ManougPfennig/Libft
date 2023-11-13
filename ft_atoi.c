@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	iswspace(char c)
+int	is_wspace(char c)
 {
 	if (c == '\t' || c == '\n' || c == '\v' || c == '\f' || c == '\r'
 		|| c == ' ')
@@ -29,7 +29,7 @@ int	ft_atoi(const char *str)
 	i = 0;
 	result = 0;
 	mult = 1;
-	while (iswspace(str[i]))
+	while (is_wspace(str[i]))
 		i++;
 	if ((char)str[i] == '-' || (char)str[i] == '+')
 	{
