@@ -6,7 +6,7 @@
 /*   By: mapfenni <mapfenni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/27 18:37:27 by mapfenni          #+#    #+#             */
-/*   Updated: 2023/11/23 13:54:05 by mapfenni         ###   ########.fr       */
+/*   Updated: 2023/11/23 14:03:56 by mapfenni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdint.h>
-# include "printf.h"
+# include "ft_printf.h"
 
 typedef struct s_list
 {

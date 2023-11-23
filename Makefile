@@ -6,7 +6,7 @@
 #    By: mapfenni <mapfenni@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/27 18:32:43 by mapfenni          #+#    #+#              #
-#    Updated: 2023/11/23 13:56:09 by mapfenni         ###   ########.fr        #
+#    Updated: 2023/11/23 14:02:22 by mapfenni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,7 @@ ${NAME}: ${OBJS}
 all: ${NAME}
 
 clean:
-	rm -f ${OBJS} ${BONUS}
+	rm -f ${OBJS}
 
 fclean: clean
 	rm -f ${NAME}
